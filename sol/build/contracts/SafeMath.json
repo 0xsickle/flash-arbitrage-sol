@@ -14,9 +14,7 @@
   "ast": {
     "absolutePath": "project:/contracts/libraries/SafeMath.sol",
     "exportedSymbols": {
-      "SafeMath": [
-        1481
-      ]
+      "SafeMath": [1481]
     },
     "id": 1482,
     "license": "UNLICENSED",
@@ -24,12 +22,7 @@
     "nodes": [
       {
         "id": 1408,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.6",
-          ".6"
-        ],
+        "literals": ["solidity", ">=", "0.6", ".6"],
         "nodeType": "PragmaDirective",
         "src": "38:24:4"
       },
@@ -40,9 +33,7 @@
         "contractKind": "library",
         "fullyImplemented": true,
         "id": 1481,
-        "linearizedBaseContracts": [
-          1481
-        ],
+        "linearizedBaseContracts": [1481],
         "name": "SafeMath",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -200,10 +191,7 @@
                       "id": 1417,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "157:7:4",
                       "typeDescriptions": {
@@ -490,10 +478,7 @@
                       "id": 1439,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "289:7:4",
                       "typeDescriptions": {
@@ -874,10 +859,7 @@
                       "id": 1461,
                       "name": "require",
                       "nodeType": "Identifier",
-                      "overloadedDeclarations": [
-                        4294967278,
-                        4294967278
-                      ],
+                      "overloadedDeclarations": [4294967278, 4294967278],
                       "referencedDeclaration": 4294967278,
                       "src": "422:7:4",
                       "typeDescriptions": {
@@ -1021,21 +1003,14 @@
     "attributes": {
       "absolutePath": "project:/contracts/libraries/SafeMath.sol",
       "exportedSymbols": {
-        "SafeMath": [
-          1481
-        ]
+        "SafeMath": [1481]
       },
       "license": "UNLICENSED"
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.6",
-            ".6"
-          ]
+          "literals": ["solidity", ">=", "0.6", ".6"]
         },
         "id": 1408,
         "name": "PragmaDirective",
@@ -1044,17 +1019,11 @@
       {
         "attributes": {
           "abstract": false,
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "library",
           "fullyImplemented": true,
-          "linearizedBaseContracts": [
-            1481
-          ],
+          "linearizedBaseContracts": [1481],
           "name": "SafeMath",
           "scope": 1482
         },
@@ -1064,9 +1033,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "add",
               "scope": 1481,
               "stateMutability": "pure",
@@ -1177,9 +1144,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "tryCall": false,
                           "type": "tuple()",
                           "type_conversion": false
@@ -1198,8 +1163,7 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                4294967278,
-                                4294967278
+                                4294967278, 4294967278
                               ],
                               "referencedDeclaration": 4294967278,
                               "type": "function (bool,string memory) pure",
@@ -1245,9 +1209,7 @@
                                     "children": [
                                       {
                                         "attributes": {
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 1415,
                                           "type": "uint256",
                                           "value": "z"
@@ -1272,9 +1234,7 @@
                                         "children": [
                                           {
                                             "attributes": {
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 1410,
                                               "type": "uint256",
                                               "value": "x"
@@ -1285,9 +1245,7 @@
                                           },
                                           {
                                             "attributes": {
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 1412,
                                               "type": "uint256",
                                               "value": "y"
@@ -1313,9 +1271,7 @@
                               },
                               {
                                 "attributes": {
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 1410,
                                   "type": "uint256",
                                   "value": "x"
@@ -1369,9 +1325,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "sub",
               "scope": 1481,
               "stateMutability": "pure",
@@ -1482,9 +1436,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "tryCall": false,
                           "type": "tuple()",
                           "type_conversion": false
@@ -1503,8 +1455,7 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                4294967278,
-                                4294967278
+                                4294967278, 4294967278
                               ],
                               "referencedDeclaration": 4294967278,
                               "type": "function (bool,string memory) pure",
@@ -1550,9 +1501,7 @@
                                     "children": [
                                       {
                                         "attributes": {
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 1437,
                                           "type": "uint256",
                                           "value": "z"
@@ -1577,9 +1526,7 @@
                                         "children": [
                                           {
                                             "attributes": {
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 1432,
                                               "type": "uint256",
                                               "value": "x"
@@ -1590,9 +1537,7 @@
                                           },
                                           {
                                             "attributes": {
-                                              "overloadedDeclarations": [
-                                                null
-                                              ],
+                                              "overloadedDeclarations": [null],
                                               "referencedDeclaration": 1434,
                                               "type": "uint256",
                                               "value": "y"
@@ -1618,9 +1563,7 @@
                               },
                               {
                                 "attributes": {
-                                  "overloadedDeclarations": [
-                                    null
-                                  ],
+                                  "overloadedDeclarations": [null],
                                   "referencedDeclaration": 1432,
                                   "type": "uint256",
                                   "value": "x"
@@ -1674,9 +1617,7 @@
               "implemented": true,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "mul",
               "scope": 1481,
               "stateMutability": "pure",
@@ -1787,9 +1728,7 @@
                           "isPure": false,
                           "isStructConstructorCall": false,
                           "lValueRequested": false,
-                          "names": [
-                            null
-                          ],
+                          "names": [null],
                           "tryCall": false,
                           "type": "tuple()",
                           "type_conversion": false
@@ -1808,8 +1747,7 @@
                                 }
                               ],
                               "overloadedDeclarations": [
-                                4294967278,
-                                4294967278
+                                4294967278, 4294967278
                               ],
                               "referencedDeclaration": 4294967278,
                               "type": "function (bool,string memory) pure",
@@ -1849,9 +1787,7 @@
                                 "children": [
                                   {
                                     "attributes": {
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 1456,
                                       "type": "uint256",
                                       "value": "y"
@@ -1998,9 +1934,7 @@
                                       },
                                       {
                                         "attributes": {
-                                          "overloadedDeclarations": [
-                                            null
-                                          ],
+                                          "overloadedDeclarations": [null],
                                           "referencedDeclaration": 1456,
                                           "type": "uint256",
                                           "value": "y"
@@ -2016,9 +1950,7 @@
                                   },
                                   {
                                     "attributes": {
-                                      "overloadedDeclarations": [
-                                        null
-                                      ],
+                                      "overloadedDeclarations": [null],
                                       "referencedDeclaration": 1454,
                                       "type": "uint256",
                                       "value": "x"

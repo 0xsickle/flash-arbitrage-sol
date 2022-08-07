@@ -237,9 +237,7 @@
   "ast": {
     "absolutePath": "project:/contracts/interfaces/IERC20.sol",
     "exportedSymbols": {
-      "IERC20": [
-        868
-      ]
+      "IERC20": [868]
     },
     "id": 869,
     "license": "UNLICENSED",
@@ -247,12 +245,7 @@
     "nodes": [
       {
         "id": 786,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "38:24:2"
       },
@@ -263,9 +256,7 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "id": 868,
-        "linearizedBaseContracts": [
-          868
-        ],
+        "linearizedBaseContracts": [868],
         "name": "IERC20",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -1223,21 +1214,14 @@
     "attributes": {
       "absolutePath": "project:/contracts/interfaces/IERC20.sol",
       "exportedSymbols": {
-        "IERC20": [
-          868
-        ]
+        "IERC20": [868]
       },
       "license": "UNLICENSED"
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.5",
-            ".0"
-          ]
+          "literals": ["solidity", ">=", "0.5", ".0"]
         },
         "id": 786,
         "name": "PragmaDirective",
@@ -1246,17 +1230,11 @@
       {
         "attributes": {
           "abstract": false,
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "interface",
           "fullyImplemented": false,
-          "linearizedBaseContracts": [
-            868
-          ],
+          "linearizedBaseContracts": [868],
           "name": "IERC20",
           "scope": 869
         },
@@ -1469,9 +1447,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "name",
               "scope": 868,
               "stateMutability": "view",
@@ -1481,9 +1457,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 803,
@@ -1534,9 +1508,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "symbol",
               "scope": 868,
               "stateMutability": "view",
@@ -1546,9 +1518,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 808,
@@ -1599,9 +1569,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "decimals",
               "scope": 868,
               "stateMutability": "view",
@@ -1611,9 +1579,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 813,
@@ -1664,9 +1630,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "totalSupply",
               "scope": 868,
               "stateMutability": "view",
@@ -1676,9 +1640,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 818,
@@ -1729,9 +1691,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "balanceOf",
               "scope": 868,
               "stateMutability": "view",
@@ -1817,9 +1777,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "allowance",
               "scope": 868,
               "stateMutability": "view",
@@ -1932,9 +1890,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "approve",
               "scope": 868,
               "stateMutability": "nonpayable",
@@ -2046,9 +2002,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "transfer",
               "scope": 868,
               "stateMutability": "nonpayable",
@@ -2160,9 +2114,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "transferFrom",
               "scope": 868,
               "stateMutability": "nonpayable",

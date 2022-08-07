@@ -20,27 +20,33 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 
 module.exports = {
-
-    networks: {
-        mainnet: {
-            provider: () => new HDWalletProvider("", "https://speedy-nodes-nyc.moralis.io/3eaa52f6335d5c0d9b1117ed/bsc/mainnet"),
-            network_id: 56
-        },
-
-        testnet: {
-            provider: () => new HDWalletProvider("", "https://data-seed-prebsc-1-s1.binance.org:8545/"),
-            network_id: 97
-        },
+  networks: {
+    mainnet: {
+      provider: () =>
+        new HDWalletProvider(
+          "",
+          "https://speedy-nodes-nyc.moralis.io/3eaa52f6335d5c0d9b1117ed/bsc/mainnet"
+        ),
+      network_id: 56,
     },
 
-    mocha: {
-        timeout: 1000000
+    testnet: {
+      provider: () =>
+        new HDWalletProvider(
+          "",
+          "https://data-seed-prebsc-1-s1.binance.org:8545/"
+        ),
+      network_id: 97,
     },
+  },
 
-    compilers: {
-        solc: {
-            version: ">=0.5.0 <0.8.0",
-        }
+  mocha: {
+    timeout: 1000000,
+  },
+
+  compilers: {
+    solc: {
+      version: ">=0.5.0 <0.8.0",
     },
-
+  },
 };

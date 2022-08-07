@@ -1,11 +1,16 @@
 import {
-    BUY_OPERATOR_ADDRESS, NETWORK_ID, OWNER_ADDRESS, ROYAL_MINT_ADDRESS, SELL_OPERATOR_ADDRESS, WEI
+  BUY_OPERATOR_ADDRESS,
+  NETWORK_ID,
+  OWNER_ADDRESS,
+  ROYAL_MINT_ADDRESS,
+  SELL_OPERATOR_ADDRESS,
+  WEI,
 } from "./config.js";
-import {OWNER_WALLET, OWNER_WEB3} from "./web3_utils.js"; // 以promise的方式引入 readFile API
+import { OWNER_WALLET, OWNER_WEB3 } from "./web3_utils.js"; // 以promise的方式引入 readFile API
 import fs from "fs";
-import {GAS_PRICE} from "./global_vars.js";
+import { GAS_PRICE } from "./global_vars.js";
 
-const RoyalMint = JSON.parse(fs.readFileSync('./contracts/RoyalMint.json'));
+const RoyalMint = JSON.parse(fs.readFileSync("./contracts/RoyalMint.json"));
 
 const contract = new OWNER_WEB3.eth.Contract(RoyalMint.abi, ROYAL_MINT_ADDRESS);
 
@@ -13,36 +18,42 @@ const contract = new OWNER_WEB3.eth.Contract(RoyalMint.abi, ROYAL_MINT_ADDRESS);
  * 获取合约owner
  */
 async function getOwner() {
-    let owner;
-    await contract.methods.owner().call().then(_owner => {
-        console.log("owner:", _owner);
-        owner = _owner;
+  let owner;
+  await contract.methods
+    .owner()
+    .call()
+    .then((_owner) => {
+      console.log("owner:", _owner);
+      owner = _owner;
     });
-    return owner;
+  return owner;
 }
 
 /**
  * 获取合约操作员
  */
 async function isOperator(address) {
-    let status;
-    await contract.methods.operators(address).call().then(_status => {
-        console.log("operatorStatus:", _status);
-        status = _status === 1;
+  let status;
+  await contract.methods
+    .operators(address)
+    .call()
+    .then((_status) => {
+      console.log("operatorStatus:", _status);
+      status = _status === 1;
     });
-    return status;
+  return status;
 }
 
 /**
  * 检查是否是主用户
  */
 async function isOwner() {
-    let owner = await getOwner();
-    if (OWNER_WALLET.address !== owner) {
-        console.error("NOT_OWNER");
-        return false;
-    }
-    return true;
+  let owner = await getOwner();
+  if (OWNER_WALLET.address !== owner) {
+    console.error("NOT_OWNER");
+    return false;
+  }
+  return true;
 }
 
 /**
@@ -51,11 +62,11 @@ async function isOwner() {
  * @returns {Promise<void>}
  */
 async function updateOwner(newOwner) {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.updateOwner(newOwner);
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.updateOwner(newOwner);
+  call(data);
 }
 
 /**
@@ -64,11 +75,11 @@ async function updateOwner(newOwner) {
  * @returns {Promise<void>}
  */
 async function confirmOwner() {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.confirmOwner();
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.confirmOwner();
+  call(data);
 }
 
 /**
@@ -76,11 +87,11 @@ async function confirmOwner() {
  * @returns {Promise<void>}
  */
 async function addOperators(operators) {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.addOperators(operators);
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.addOperators(operators);
+  call(data);
 }
 
 /**
@@ -88,11 +99,11 @@ async function addOperators(operators) {
  * @returns {Promise<void>}
  */
 async function removeOperators(operators) {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.removeOperators(operators);
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.removeOperators(operators);
+  call(data);
 }
 
 /**
@@ -101,48 +112,55 @@ async function removeOperators(operators) {
  * amount:要提币的数量
  */
 async function withdraw(token, amount) {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.withdraw(token, amount.toString());
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.withdraw(token, amount.toString());
+  call(data);
 }
 
 async function royalMint(amountIn, amountOutMin, token, swapFees, pairs) {
-    if (!await isOwner()) {
-        return;
-    }
-    let data = contract.methods.royalMint(amountIn, amountOutMin, token, swapFees, pairs);
-    call(data);
+  if (!(await isOwner())) {
+    return;
+  }
+  let data = contract.methods.royalMint(
+    amountIn,
+    amountOutMin,
+    token,
+    swapFees,
+    pairs
+  );
+  call(data);
 }
 
 async function call(data) {
-    let dataEncode = data.encodeABI();
-    let nonce = OWNER_WEB3.eth.getTransactionCount(OWNER_WALLET.address);
-    let tx = {
-        from: OWNER_ADDRESS,
-        to: contract.options.address,
-        gas: "800000",
-        gasPrice: GAS_PRICE,
-        data: dataEncode,
-        value: 0,
-        chainId: NETWORK_ID,
-        nonce: nonce,
-    };
-    let encodeTx;
-    let txHash;
-    await OWNER_WALLET.signTransaction(tx).then((encodedTransaction) => {
-        encodeTx = encodedTransaction.rawTransaction;
-        txHash = encodedTransaction.transactionHash;
-    });
-    OWNER_WEB3.eth
-        .sendSignedTransaction(encodeTx)
-        .on("transactionHash", hash => {
-            console.log(`owner transaction with ${hash}`);
-        })
-        .on("error", (error, receipt) => {
-            console.error("owner transaction error: ", error.message);
-        }).then();
+  let dataEncode = data.encodeABI();
+  let nonce = OWNER_WEB3.eth.getTransactionCount(OWNER_WALLET.address);
+  let tx = {
+    from: OWNER_ADDRESS,
+    to: contract.options.address,
+    gas: "800000",
+    gasPrice: GAS_PRICE,
+    data: dataEncode,
+    value: 0,
+    chainId: NETWORK_ID,
+    nonce: nonce,
+  };
+  let encodeTx;
+  let txHash;
+  await OWNER_WALLET.signTransaction(tx).then((encodedTransaction) => {
+    encodeTx = encodedTransaction.rawTransaction;
+    txHash = encodedTransaction.transactionHash;
+  });
+  OWNER_WEB3.eth
+    .sendSignedTransaction(encodeTx)
+    .on("transactionHash", (hash) => {
+      console.log(`owner transaction with ${hash}`);
+    })
+    .on("error", (error, receipt) => {
+      console.error("owner transaction error: ", error.message);
+    })
+    .then();
 }
 
 //console.log(getOwner());

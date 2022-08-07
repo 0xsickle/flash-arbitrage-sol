@@ -666,9 +666,7 @@
   "ast": {
     "absolutePath": "project:/contracts/interfaces/IPair.sol",
     "exportedSymbols": {
-      "IPair": [
-        1406
-      ]
+      "IPair": [1406]
     },
     "id": 1407,
     "license": "UNLICENSED",
@@ -676,12 +674,7 @@
     "nodes": [
       {
         "id": 1166,
-        "literals": [
-          "solidity",
-          ">=",
-          "0.5",
-          ".0"
-        ],
+        "literals": ["solidity", ">=", "0.5", ".0"],
         "nodeType": "PragmaDirective",
         "src": "38:24:3"
       },
@@ -692,9 +685,7 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "id": 1406,
-        "linearizedBaseContracts": [
-          1406
-        ],
+        "linearizedBaseContracts": [1406],
         "name": "IPair",
         "nodeType": "ContractDefinition",
         "nodes": [
@@ -3476,21 +3467,14 @@
     "attributes": {
       "absolutePath": "project:/contracts/interfaces/IPair.sol",
       "exportedSymbols": {
-        "IPair": [
-          1406
-        ]
+        "IPair": [1406]
       },
       "license": "UNLICENSED"
     },
     "children": [
       {
         "attributes": {
-          "literals": [
-            "solidity",
-            ">=",
-            "0.5",
-            ".0"
-          ]
+          "literals": ["solidity", ">=", "0.5", ".0"]
         },
         "id": 1166,
         "name": "PragmaDirective",
@@ -3499,17 +3483,11 @@
       {
         "attributes": {
           "abstract": false,
-          "baseContracts": [
-            null
-          ],
-          "contractDependencies": [
-            null
-          ],
+          "baseContracts": [null],
+          "contractDependencies": [null],
           "contractKind": "interface",
           "fullyImplemented": false,
-          "linearizedBaseContracts": [
-            1406
-          ],
+          "linearizedBaseContracts": [1406],
           "name": "IPair",
           "scope": 1407
         },
@@ -3722,9 +3700,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "name",
               "scope": 1406,
               "stateMutability": "pure",
@@ -3734,9 +3710,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1183,
@@ -3787,9 +3761,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "symbol",
               "scope": 1406,
               "stateMutability": "pure",
@@ -3799,9 +3771,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1188,
@@ -3852,9 +3822,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "decimals",
               "scope": 1406,
               "stateMutability": "pure",
@@ -3864,9 +3832,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1193,
@@ -3917,9 +3883,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "totalSupply",
               "scope": 1406,
               "stateMutability": "view",
@@ -3929,9 +3893,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1198,
@@ -3982,9 +3944,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "balanceOf",
               "scope": 1406,
               "stateMutability": "view",
@@ -4070,9 +4030,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "allowance",
               "scope": 1406,
               "stateMutability": "view",
@@ -4185,9 +4143,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "approve",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -4299,9 +4255,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "transfer",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -4413,9 +4367,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "transferFrom",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -4554,9 +4506,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "DOMAIN_SEPARATOR",
               "scope": 1406,
               "stateMutability": "view",
@@ -4566,9 +4516,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1248,
@@ -4619,9 +4567,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "PERMIT_TYPEHASH",
               "scope": 1406,
               "stateMutability": "pure",
@@ -4631,9 +4577,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1253,
@@ -4684,9 +4628,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "nonces",
               "scope": 1406,
               "stateMutability": "view",
@@ -4772,9 +4714,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "permit",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -4975,9 +4915,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1280,
@@ -5477,9 +5415,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "MINIMUM_LIQUIDITY",
               "scope": 1406,
               "stateMutability": "pure",
@@ -5489,9 +5425,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1320,
@@ -5542,9 +5476,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "factory",
               "scope": 1406,
               "stateMutability": "view",
@@ -5554,9 +5486,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1325,
@@ -5608,9 +5538,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "token0",
               "scope": 1406,
               "stateMutability": "view",
@@ -5620,9 +5548,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1330,
@@ -5674,9 +5600,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "token1",
               "scope": 1406,
               "stateMutability": "view",
@@ -5686,9 +5610,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1335,
@@ -5740,9 +5662,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "getReserves",
               "scope": 1406,
               "stateMutability": "view",
@@ -5752,9 +5672,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1340,
@@ -5857,9 +5775,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "price0CumulativeLast",
               "scope": 1406,
               "stateMutability": "view",
@@ -5869,9 +5785,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1349,
@@ -5922,9 +5836,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "price1CumulativeLast",
               "scope": 1406,
               "stateMutability": "view",
@@ -5934,9 +5846,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1354,
@@ -5987,9 +5897,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "kLast",
               "scope": 1406,
               "stateMutability": "view",
@@ -5999,9 +5907,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1359,
@@ -6052,9 +5958,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "mint",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6140,9 +6044,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "burn",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6254,9 +6156,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "swap",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6378,9 +6278,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1389,
@@ -6398,9 +6296,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "skim",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6444,9 +6340,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1394,
@@ -6464,9 +6358,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "sync",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6476,9 +6368,7 @@
             "children": [
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1396,
@@ -6487,9 +6377,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1397,
@@ -6507,9 +6395,7 @@
               "implemented": false,
               "isConstructor": false,
               "kind": "function",
-              "modifiers": [
-                null
-              ],
+              "modifiers": [null],
               "name": "initialize",
               "scope": 1406,
               "stateMutability": "nonpayable",
@@ -6580,9 +6466,7 @@
               },
               {
                 "attributes": {
-                  "parameters": [
-                    null
-                  ]
+                  "parameters": [null]
                 },
                 "children": [],
                 "id": 1404,
